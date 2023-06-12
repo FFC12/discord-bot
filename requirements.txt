@@ -1,0 +1,7 @@
+fastapi
+discord.py
+bardapi
+asyncio
+youtube-search-python
+loguru
+pillow
