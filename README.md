@@ -1,5 +1,6 @@
-## Discord Bot for My Community Server ![Discord Shield](https://discordapp.com/api/guilds/[990265598627967047]/widget.png?style=shield)
+## Discord Bot for My Community Server 
 
+To invite the bot to your server, click [here](https://discord.com/api/oauth2/authorize?client_id=1117847858159300608&permissions=8&scope=bot). When it's online, you can use `/help` to see the list of commands.
 ### Features
 - [x] Moderation
 - [x] Fun
