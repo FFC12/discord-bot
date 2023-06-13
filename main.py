@@ -8,7 +8,12 @@ from app.commands.image import ImageGenerator
 
 import asyncio
 
+import loguru
+
 TOKEN = os.getenv('DISCORD_TOKEN')
+
+# set loguru logger level
+loguru.logger.level('DEBUG')
 
 
 async def init():

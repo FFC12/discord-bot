@@ -13,7 +13,7 @@ from loguru import logger
 
 class ImageGenerator(commands.Cog):
     """
-    Music cog for discord bot
+    Image cog for discord bot
     """
 
     def __init__(self, bot):

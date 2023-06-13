@@ -140,9 +140,3 @@ class UserManage(commands.Cog):
         """
         for i in range(3):
             await ctx.send('@everyone This is a announcement! Please read it.')
-
-
-
-
-
-
