@@ -1,3 +1,5 @@
+import os
+
 import discord
 from discord import Intents, Embed, Colour
 from discord.ext import commands
@@ -9,18 +11,10 @@ class DiscordBot:
     intents = discord.Intents.default()
     intents.message_content = True
 
-    # Discord client instance with intents
-    client = discord.Client(intents=intents)
-
     bot = commands.Bot(command_prefix='/', intents=intents)
 
     def __init__(self, token):
         self.token = token
-
-    @staticmethod
-    @client.event
-    async def on_ready():
-        print(f'{DiscordBot.client.user} has connected to Discord!')
 
     def run(self):
         """
@@ -36,3 +30,13 @@ class DiscordBot:
         :return:
         """
         await DiscordBot.bot.add_cog(cog)
+
+
+@DiscordBot.bot.event
+async def on_ready():
+    print(f'{DiscordBot.bot.user} has connected to Discord!')
+
+
+@DiscordBot.bot.event
+async def on_disconnect():
+    print(f'{DiscordBot.bot.user} has disconnected to Discord!')

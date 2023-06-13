@@ -5,6 +5,7 @@ from app.commands.manage import Greetings, UserManage
 from app.commands.music import Music
 from app.commands.chatbot import Chatbot
 from app.commands.image import ImageGenerator
+from app.commands.utility import Utility
 
 import asyncio
 
@@ -26,6 +27,7 @@ async def init():
     await bot.register_cog(Music(bot))
     await bot.register_cog(Chatbot(bot))
     await bot.register_cog(ImageGenerator(bot))
+    await bot.register_cog(Utility(bot))
 
     return bot
 
