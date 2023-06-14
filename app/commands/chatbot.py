@@ -25,7 +25,8 @@ class Chatbot(commands.Cog):
     @commands.command('chat', help='Write something to chatbot and it will answer you')
     async def chat(self, ctx, *, message):
         """
-        Play command for play music randomly
+        Chat command for chat with bot
+
         :param ctx:
         :param message:
         :return:
